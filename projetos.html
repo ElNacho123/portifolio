@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projetos.css">
+    <script src="projetos.js"></script>
+</head>
+<body id="body">
+    <nav id="nav">
+       
+        <div class="bnt-trocar">
+            <label class="switch">
+                <input type="checkbox" onclick="trocar()" id="check">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="curriculo">
+        <h1>Projetos</h1>
+        </div>
+          
+        <div class="menu"><img src="cardapio.png" onclick="displayblock()"alt=""></div>
+      
+    </nav>
+    
+    <main id="main">
+        <div><h1>João Pedro</h1></div>
+
+        <div class="projetos">
+            <a href="index.html" id="link">Curriculo</a> <br> <br> 
+            <a href="contatos.html" id="link2">Contatos</a> <br><br>
+            <a href="biografia.html" id="link3">Biografia</a></div>
+    </main>
+    <div class="central" id="centrall" >
+        <div class="carrossel">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="imagem1.jpg" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="imagem2.jpg" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="imagem3.jpg" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contatos.css">
+    <script defer src="contatos.js"></script>
+</head>
+<body id="body">
+    
+    
+    
+    <nav id="nav">    
+        <div class="curriculo">
+        <h1>Contatos</h1>
+        </div>
+          <div class="darkbnt">
+            <label class="switch">
+                <input type="checkbox" onclick="dark()" id="trocar">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="imgNone">
+            <button onclick="displayblock()">
+            <img src="cardapio.png" alt="">
+        </button>
+        </div>
+    </nav>
+    <main id="main">
+        <div><h1>João <br> Pedro</h1></div>
+
+        <div class="projetos"><a href="projetos.html">Projetos</a> <br><br>
+            <a href="index.html"> Curriculo </a><br><br>
+            <a href="biografia.html">Biografia</a></div>
+    </main>
+    <div class="central" id="central">
+        <div>
+            <h1 class="projetos-html">Contatos</h1>
+        </div>
+        <div><h3><a href="https://wa.me/5531993709602?text=vim%20pelo%20portifolio%0A">Whatsapp</a></h3></div>
+        <div><h3><a href="https://github.com/ElNacho123/ElNacho123">GitHub</a></h3></div>
+        
+            <button id="openModal" class="bntmodal">Formulario</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>coloque seus dados</p>
+        <input type="text" placeholder="email">
+        <input type="text" placeholder="mensagem">
+        <button id="sendMessage">Enviar</button>
+    </div>
+</div>
+
+<div id="message" class="message"></div>
+
+        </div>
+    </div>
+</body>
+</html>

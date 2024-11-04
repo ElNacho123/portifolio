@@ -1,0 +1,247 @@
+a{
+    text-decoration: none;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-shadow: 15px 15px 20 black;
+}
+.img{
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #D9D9D9;
+}
+.display{
+  display: none;
+}
+
+
+
+.curriculo{
+  font-size: 35px;
+    padding: 25px 0 0 50px;
+}
+nav div img{
+  padding: 50px 100px 0 0;
+}
+nav h1{
+  padding-left: 100px;
+}
+.darbnt{
+  position: absolute;
+  left: 1500px;
+  top: 45px;
+}
+
+main{
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  border-right: solid black;
+}
+main div h1{
+  padding: 50px 0 0 25px;
+  font-size: 50px;
+}
+.projetos{
+  font-size: 25px;
+  padding: 100px 0 0 50px;
+}
+
+
+
+.central .bloco{
+  height: 50vh;
+  width: 35%;
+  background-color: #D9D9D9;
+  position: absolute;
+  left: 700px;
+  top: 250px;
+}
+.text::after{
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: black;
+  width: 674px;
+  top: -10px; 
+}
+.text{
+  width: 35%;
+  position: absolute;
+  top: 750px;
+  left: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.central{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 15px;
+  position: absolute;
+  background-color: #D9D9D9;
+  width: 30%;
+  height: 55vh;
+  top: 250px;
+  left: 700px;
+}
+.projetos-html{
+  padding-top: 50px;
+}
+.projetos a{
+  color: black;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+input:checked+.slider:before{
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .display button{
+    display: none;
+  }
+  
+  
+  @media(max-width:450px){
+    .curriculo h1{
+      padding-left: 10px;
+      padding-top: 20px;
+      font-size: 40px;
+    }
+    .darbnt{
+      position: absolute;
+      left: 300px;
+      top:55px;
+    }
+    
+    
+    main{
+      display: none;
+      width: 200px;
+    }
+    main div h1{
+      font-size: 35px;
+      padding-left: 45px;
+    }
+    
+    .projetos{
+      font-size: 25px;
+    }
+    .display{
+      display: block;
+      position: absolute;
+      left: -8px;
+      top: -10px;
+      height: 100px;
+      width: 100px;
+    }
+    
+  .display button{
+  display: block;
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 50px;
+}
+.display button img{
+  height: 50px;
+  width: 50px;
+}
+
+.central{
+  display: block;
+  left: 50px;
+  width: 300px;
+  z-index: 10;
+}
+
+}
+.menu{
+  display: block;
+}
+
+.dark2{
+  background-color: #393939;
+  border-right: white solid 2px;
+  color: white;
+}
+.dark{
+  background-color: black;
+
+}
+.dark-nav{
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+.teste{
+  display: none;
+}
+.dark-link{
+  color: white !important;
+  background-color: transparent;
+}
+.dark-html{
+  background-color: #393939;
+}
